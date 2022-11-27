@@ -1,0 +1,27 @@
+.maindiv{
+    display: flex;
+    flex-direction: row;
+    padding:40px;
+}
+
+.product-list{
+    width:30%;
+    height:100vh;
+    border:1px solid black;
+}
+
+.product-details{
+    width:70%;
+    height:100vh;
+    border:1px solid black;
+}
+
+.imageSize { 
+    width:300px;
+    height: 300px;
+}
+
+.selectedProduct{
+    color:wheat;
+    text-decoration: underline;
+}
