@@ -2,11 +2,8 @@
     <div class="product-list">
         <h5 [ngClass]="selectedProduct===product?'selectedProduct':''" (click)="selectProduct(product)" *ngFor="let product of ProductList">{{product.title}}</h5>
     </div>
-    <div class="product-details">
-        <h5>{{selectedProduct.title}}</h5>
-        <h5>{{selectedProduct.price}}</h5>
-        <h5>{{selectedProduct.description}}</h5>
-        <img class="imageSize" [src]="selectedProduct.image" alt="">
-       
-    </div>
+    <app-product-details 
+    [selectedProduct]="selectedProduct"
+    (deleteProduct)="removeProduct($event)"
+    ></app-product-details>
 </div>
